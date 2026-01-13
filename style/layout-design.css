@@ -1,0 +1,32 @@
+.container>*{
+    border: 2px solid red;
+    background-color: rgb(233, 157, 157);
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: navbar;
+}
+main{
+    grid-area: main;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#Advertise{
+    grid-area: advertise;
+}
+footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "navbar main main sidebar"
+    "navbar main main advertise"
+    "footer footer footer footer"
+
+}
